@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copa del Mundo 2026 — FIFA Data Recovery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>⚽ Copa del Mundo 2026</h1>
+    <p class="subtitle">FIFA Data Recovery — Endpoints para las federaciones</p>
+  </header>
+
+  <main>
+    <section class="info-card alert">
+      <h2>🚨 Emergencia FIFA</h2>
+      <p>Se perdió el acceso centralizado a los datos del Mundial. Las federaciones necesitan endpoints para consultar <strong>partidos</strong> y <strong>poleras oficiales</strong>. Tu equipo debe desplegar la infraestructura.</p>
+    </section>
+
+    <section class="info-card">
+      <h2>Partidos programados</h2>
+      <p id="status-partidos">Cargando partidos...</p>
+      <table id="partidos-table" hidden>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Fecha</th>
+            <th>Local</th>
+            <th>Visitante</th>
+            <th>Estadio</th>
+            <th>Grupo</th>
+          </tr>
+        </thead>
+        <tbody id="partidos-body"></tbody>
+      </table>
+    </section>
+
+    <section class="info-card">
+      <h2>Detalle de partido (por federación)</h2>
+      <label for="partido-id">ID del partido:</label>
+      <input id="partido-id" type="text" value="partido-001" />
+      <button id="btn-buscar" type="button">Consultar</button>
+      <pre id="partido-detalle">Ingresa un ID de partido para entregar el dato a la federación.</pre>
+    </section>
+
+    <section class="info-card">
+      <h2>Poleras oficiales</h2>
+      <p id="status-poleras">Cargando catálogo...</p>
+      <div id="poleras-grid" class="poleras-grid"></div>
+    </section>
+
+    <section class="info-card">
+      <h2>Cómo se usa esta carpeta en el examen</h2>
+      <ul class="checklist">
+        <li><strong>Lab 1:</strong> Creas <code>Dockerfile</code> y corres la web en Docker</li>
+        <li><strong>Lab 2:</strong> El pipeline sube <code>app/</code> completa a S3</li>
+        <li><strong>Lab 3:</strong> Completas <code>config.js</code> y vuelves a desplegar</li>
+        <li><strong>Lab 4:</strong> La misma imagen Docker va a Kubernetes</li>
+      </ul>
+      <p class="hint">Detalle: <code>app/INSTRUCCIONES.md</code></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>UCB — Computación en la Nube · Examen Final</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

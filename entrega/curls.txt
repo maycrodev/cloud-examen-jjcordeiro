@@ -1,0 +1,10 @@
+# Pegar aquí la salida de los 3 curl del Lab 3
+
+## GET /poleras
+
+
+## GET /partidos
+
+
+## GET /partidos/partido-001
+
