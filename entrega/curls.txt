@@ -1,10 +1,10 @@
 # Pegar aquí la salida de los 3 curl del Lab 3
 
 ## GET /poleras
-
+mundial-poleras-juancordeiro
 
 ## GET /partidos
-
+mundial-listar-partidos-juancordeiro
 
 ## GET /partidos/partido-001
-
+mundial-obtener-partido-juancordeiro
